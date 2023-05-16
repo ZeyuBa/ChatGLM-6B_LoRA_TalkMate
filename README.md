@@ -4,7 +4,7 @@ A ChatBot based on the ChatGLM LoRA Finetuning Project : **https://github.com/li
 
 We fine-tuned the LLM with LoRA and got a TalkMate that speaks like a REAL Human!
 
-The Test Result using the backbone model and fine-tuned model is: 
+The Chat Example using the backbone model and fine-tuned model is here: https://github.com/ZeyuBa/ChatGLM-6B_LoRA_TalkMate/tree/main/chat_example
 
 BlEU Score and Train loss is:
 
