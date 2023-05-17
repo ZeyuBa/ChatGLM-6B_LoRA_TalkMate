@@ -8,7 +8,7 @@ The Chat Example using the backbone model and fine-tuned model is here: https://
 
 BlEU Score and Train loss is:
 
-| Column 1 epoch | Column 2 BLEU score |
+| epoch | BLEU score |
 | --------------- | --------------- |
 | - | 0.478 |
 | 0 | 0.545 |
