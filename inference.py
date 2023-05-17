@@ -93,15 +93,3 @@ with open('result_'+file[-4]+'new.json', 'w', encoding='utf-8') as f:
         pbar.update(1)
     f.write(json.dumps(result, ensure_ascii=False, indent=4))
     pbar.close()
-
-import requests
-headers = {"Authorization": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjExNTI0NiwidXVpZCI6ImQwNWViMzA0LWZkOGYtNGQ0ZC05MTJiLWI1OWZjZDE2ZTRhYyIsImlzX2FkbWluIjpmYWxzZSwiaXNfc3VwZXJfYWRtaW4iOmZhbHNlLCJzdWJfbmFtZSI6IiIsInRlbmFudCI6ImF1dG9kbCIsInVwayI6IiJ9.e3nE8Wm3D2IqK4qKZwrV7B1Sxex0Jvp-hi9cBEC42tT1L5ZppkcXjb-u4nUTiwIOokDkv_W6IaxdshgM_wwo9w"}
-
-test_accuracy=0
-resp = requests.post("https://www.autodl.com/api/v1/wechat/message/send",
-                    json={
-                        "title": "eg. 来自我的程序",
-                        "name": "eg. 我的fine_tune实验",
-                        "content": "实验结束",
-                    }, headers = headers)
-print(resp.content.decode())
